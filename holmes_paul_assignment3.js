@@ -98,6 +98,20 @@ for (var key in student) {
 	// will log data from each in the variable student.
 	console.log("key: " + key + ", value: " + student[key]);
 };
+//<<<<<------  IGNORE THIS, just a example for during the construction phase.
+student.sayHi();
+
+student.sayHi = function () {
+	console.log("Get lost.");	
+};
+
+student["sayHi"]();
+
+// Will replace 'var key = "name";'
+for (var key in student) {
+	// will log data from each in the variable student.
+	console.log("key: " + key + ", value: " + student[key]);
+};
 
 
 
