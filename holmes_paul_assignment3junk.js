@@ -14,7 +14,7 @@
 
 
 
-/*
+
 var tempFahren = "The temperature is",
 theTemp = 72,
 celsiusTemp = ((theTemp - 32) * (5 / 9)),
@@ -26,7 +26,7 @@ satVapPresB = Math.pow(6.11,satVapPres),
 actualVaporB = Math.pow(6.11,actualVapor);
 brandWax = "Now I must determine what brand of waxes would be best utilized in this weather."
 relativeHum = (actualVaporB * satVapPresB)
-*/
+var fahrenheit = celsiusToFah
 
 
 
@@ -37,13 +37,13 @@ relativeHum = (actualVaporB * satVapPresB)
 
 
 
-/*
+
 var say = function(message) {console.log(message);};
 var celsiusToFah = function(fahrenheit) {
 	return ((fahrenheit - 32) * (5 / 9))
 };
 say("72 F = " + celsiusToFah(72) + " C");
-*/
+
 
 
 
@@ -68,23 +68,24 @@ var key = "temp";
 
 var celsiusToFah = { tempFigures: "temp" };
 
-var fahrenheit = celsiusToFah
-
 var tempFigures = {
 	preferredTemp: "72 F",
 	actualTemp: "72 F",
 	dewPoint: "68 F",
-	humidityRelative: "realtiveHum",
+	humidityRelative: relativeHum,
 	temp: function(){
-		var fahrenheit = tempFigures.actualTemp;
+		var fahrenheit = tempFigures.temp.celsiusToFah;
 		celsiusToFah: fahrenheit();{
-			return ((fahrenheit - 32) * (5 / 9))
-			};
-			}
+			return ((fahrenheit - 28) * (5 / 9))
+		};
+		}
+
 
 };
 
-
+for (var key in tempFigures) {
+			console.log("key: " + key + ", value: " + tempFigures[key]);
+};
 
 console.log(fahrenheit);
 
@@ -135,7 +136,7 @@ var hi = student.sayHi;
 
 var key = "sayHi";
 
-
+*/
 
 
 
@@ -180,7 +181,7 @@ if (this === true) {
 
 
 
-
+/*
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 // JSON
