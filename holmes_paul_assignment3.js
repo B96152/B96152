@@ -62,13 +62,8 @@ student.name = "Bob";
 
 // var key = "sayFah";
 
-/*<<<<<------  IGNORE THIS, just a example for during the construction phase.
-console.log(student["interests"]);
-// or
-console.log(student.interests);
-// or
-//console.log(arr.id);
-// or
+//<<<<<------  IGNORE THIS, just a example for during the construction phase.
+
 console.log(student[key]);
 // or
 console.log(student.sayHi);
@@ -83,7 +78,7 @@ console.log(student["sayHi"]);
 
 
 
-*/
+
 //<<<<<------  IGNORE THIS, just a example for during the construction phase.
 student.sayHi();
 
@@ -96,7 +91,7 @@ student["sayHi"]();
 // Will replace 'var key = "name";'
 for (var key in student) {
 	// will log data from each in the variable student.
-	console.log("key: " + key + ", value: " + student[key]);
+	console.log("key: " + key + ", value: ", student[key]);
 };
 //<<<<<------  IGNORE THIS, just a example for during the construction phase.
 student.sayHi();
@@ -124,7 +119,7 @@ student.sayFah();
 console.log(student.sayFah);
 */
 
-
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 

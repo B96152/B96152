@@ -46,45 +46,49 @@ say("72 F = " + celsiusToFah(72) + " C");
 */
 
 
-var fahrenheit = celsiusToFah;
 
+/*
 var tempFigures = new Object();
 	tempFigures.preferredTemp = "72 F",
 	tempFigures.actualTemp = "72 F",
 	tempFigures.dewPoint = "68 F",
 	tempFigures.humidityRelative = "realtiveHum"
-	tempFigures.temp = function(message) {console.log(message);};
-		var celsiusToFah = function(fahrenheit) {
-		return ((fahrenheit - 32) * (5 / 9))
-		console.log("72 F = " + temp(72) + " C");
-		};
-
+	tempFigures.temp = function() {
+		var celsiusToFah = function() {
+			return ((fahrenheit - 32) * (5 / 9))
+			};
+};
 tempFigures.temp();
+console.log(tempFigures.temp);
+*/
 
 
 
+var key = "temp";
 
+var celsiusToFah = { tempFigures: "temp" };
 
-/*
-var fahrenheit = theTemp;
+var fahrenheit = celsiusToFah
 
 var tempFigures = {
 	preferredTemp: "72 F",
 	actualTemp: "72 F",
 	dewPoint: "68 F",
 	humidityRelative: "realtiveHum",
-	temp: function() {
-		console.log(message);},
-	celsiusToFah: function(fahrenheit) {
-	return ((fahrenheit - 32) * (5 / 9))
-},
-	say: ("72 F = " + celsiusToFah(72) + " C"),
+	temp: function(){
+		var fahrenheit = tempFigures.actualTemp;
+		celsiusToFah: fahrenheit();{
+			return ((fahrenheit - 32) * (5 / 9))
+			};
+			}
+
 };
-	
+
 
 
 console.log(fahrenheit);
 
+console.log(tempFigures);
 
 
 
@@ -100,7 +104,7 @@ console.log(fahrenheit);
 
 
 
-
+/*
 
 var arr = [true, false, "", [], function(){}, 101];
 
