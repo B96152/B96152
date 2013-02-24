@@ -5,10 +5,9 @@
 
 
 
+// Start
 
-
-
-
+// Global variables
 
 
 var tempFahren = "The temperature is",
@@ -31,6 +30,7 @@ celsiusTemp();
 // console.log(celsiusTemp());
 
 console.log("The weather report is as follows.");
+
 
 var say = function(message) {console.log(message);};
 var celsiusToFah = function(fahrenheit) {
