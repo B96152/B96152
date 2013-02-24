@@ -13,7 +13,6 @@
 
 var tempFahren = "The temperature is",
 theTemp = 72,
-celsiusTemp = ((theTemp - 32) * (5 / 9)),
 dewPoint = 68,
 dewTempFahrenheit = ((dewPoint - 32) * (5 / 9)),
 satVapPres = ((7.5 * celsiusTemp) / (237.7 + celsiusTemp)),
@@ -22,7 +21,16 @@ satVapPresB = Math.pow(6.11,satVapPres),
 actualVaporB = Math.pow(6.11,actualVapor);
 brandWax = "Now I must determine what brand of waxes would be best utilized in this weather."
 relativeHum = (actualVaporB * satVapPresB);
+var say7 = function(message7) {console.log(message7);};
+var celsiusTemp = function(cel) {
+	return ((theTemp - 32) * (5 / 9));
+};
 
+celsiusTemp();
+
+// console.log(celsiusTemp());
+
+console.log("The weather report is as follows.");
 
 var say = function(message) {console.log(message);};
 var celsiusToFah = function(fahrenheit) {
@@ -72,7 +80,8 @@ actualVapor2();
 relativeHumidity();
 
 
-console.log("The relative humidity is " + relativeHum + ".");
+
+console.log("The relative humidity is " + relativeHumidity() + ".");
 
 
 if (theTemp >= 68 && theTemp <= 80) {
@@ -85,7 +94,7 @@ if (theTemp <= 68 && theTemp >= 80) {
 	console.log("The temperature is either too hot or too cold.");
 }
 };
-
+/*
 if (this === true) {
 
 		// output
@@ -102,7 +111,7 @@ if (this === true) {
 
 }
 
-
+*/
 
 
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -124,6 +133,7 @@ var jsonstring = JSON.stringify(json);
 
 var recievedjson = JSON.parse(jsonstring);
 	console.log(recievedjson);
+
 
 
 // Boolean Function/comparison
