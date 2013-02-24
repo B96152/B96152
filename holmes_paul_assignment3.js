@@ -72,36 +72,6 @@ actualVapor2();
 relativeHumidity();
 
 
-// var arr = [true, false, "", [], function(){}, 101];<<<<<------  IGNORE THIS, just a reminder.
-
-var student = {
-	id: "00000111",
-	name: "Mike",
-	interests: [
-		"JavaScript",
-		"HTML",
-		"CSS",
-		"Flash"
-	],
-	age: 503423,
-	sayHi: function () {
-		console.log("Hi!");
-		},
-
-};
-
-student.sayHi();
-
-var key = "name";
-
-student.name = "Bob";
-
-
-console.log(student[key]);
-
-
-
-
 console.log("The relative humidity is " + relativeHum + ".");
 
 
