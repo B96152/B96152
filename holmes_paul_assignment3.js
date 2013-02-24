@@ -87,78 +87,18 @@ var student = {
 	sayHi: function () {
 		console.log("Hi!");
 		},
-/*	sayFah: function() {
-		console.log("Fahrenheit");
-},
-	celsiusToFah: function(fahrenheit) {
-		return ((fahrenheit - 32) * (5 / 9));
-		},*/
+
 };
+
+student.sayHi();
 
 var key = "name";
 
 student.name = "Bob";
 
-// var key = "sayFah";
-
-//<<<<<------  IGNORE THIS, just a example for during the construction phase.
 
 console.log(student[key]);
-// or
-console.log(student.sayHi);
-//or
-console.log(student["sayHi"]);
 
-
-
-
-
-
-
-
-
-
-//<<<<<------  IGNORE THIS, just a example for during the construction phase.
-student.sayHi();
-
-student.sayHi = function () {
-	console.log("Get lost.");	
-};
-
-student["sayHi"]();
-
-// Will replace 'var key = "name";'
-for (var key in student) {
-	// will log data from each in the variable student.
-	console.log("key: " + key + ", value: ", student[key]);
-};
-//<<<<<------  IGNORE THIS, just a example for during the construction phase.
-student.sayHi();
-
-student.sayHi = function () {
-	console.log("Get lost.");	
-};
-
-student["sayHi"]();
-
-// Will replace 'var key = "name";'
-for (var key in student) {
-	// will log data from each in the variable student.
-	console.log("key: " + key + ", value: " + student[key]);
-};
-
-
-
-
-
-
-/*
-student.sayFah();
-
-console.log(student.sayFah);
-*/
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 
