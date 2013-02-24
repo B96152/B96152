@@ -32,9 +32,10 @@ celsiusTemp();
 console.log("The weather report is as follows.");
 
 
+
 var say = function(message) {console.log(message);};
 var celsiusToFah = function(fahrenheit) {
-	return ((fahrenheit - 32) * (5 / 9))
+	return ((fahrenheit - 32) * (5 / 9));
 };
 
 var say2 = function(message2) {console.log(message2);};
@@ -80,20 +81,28 @@ actualVapor2();
 relativeHumidity();
 
 
-
 console.log("The relative humidity is " + relativeHumidity() + ".");
 
+
+
+
+// Procedure
 
 if (theTemp >= 68 && theTemp <= 80) {
 	console.log(tempFahren + " between 68 degrees Fahrenheit and 80 degrees Fahrenheit.");
 	console.log(tempFahren + " " + theTemp + ".");
 	console.log(tempFahren + " good for cleaning vehicles!");
 	console.log(brandWax);
+	
+	
+} else {
 
-if (theTemp <= 68 && theTemp >= 80) {
 	console.log("The temperature is either too hot or too cold.");
-}
 };
+
+
+
+
 /*
 if (this === true) {
 
@@ -218,3 +227,6 @@ var minutesRemain = minutesThisWaxStep - minutes;
 console.log("I'm pretty much done with the " + waxName + "!");
 
 }	// for waxStepNumber
+
+
+
