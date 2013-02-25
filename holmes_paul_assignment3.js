@@ -322,3 +322,6 @@ var time = truckDetailTime();
 reportTimePerObject(time);
 
 
+
+
+
