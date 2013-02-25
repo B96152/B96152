@@ -33,6 +33,11 @@ console.log("The weather report is as follows.");
 
 
 
+
+
+
+
+
 var say = function(message) {console.log(message);};
 var celsiusToFah = function(fahrenheit) {
 	return ((fahrenheit - 32) * (5 / 9));
@@ -99,6 +104,32 @@ if (theTemp >= 68 && theTemp <= 80) {
 
 	console.log("The temperature is either too hot or too cold.");
 };
+
+
+
+// Function scope
+
+var w = 5;
+var l = 15;
+var h = 7;
+
+var truckArea = function () {
+	var area = w * l * h;
+	return area;
+};
+
+var reportArea = function(area){
+	console.log("I need at least 3/4 of a can of wax to be able to cover " + area + " sq. ft. of the truck's surface.")
+};
+
+var area = truckArea();
+
+reportArea(area);
+
+
+
+
+
 
 
 
@@ -210,7 +241,7 @@ var n = str1.concat(str2,str3);
 
 console.log(n)
 
-// Array function #5
+// Array function
 
 // For loop function
 
@@ -228,5 +259,66 @@ console.log("I'm pretty much done with the " + waxName + "!");
 
 }	// for waxStepNumber
 
+
+
+
+var arr = [true, false, "", [], function()[], 101];
+
+var truckInterior = {
+	carpet: "Is dirty!",
+	dashBoard: "Is dusty!",
+	seats: "Have old french fries from Jack in the Box!",
+	airVents: "Wet and dirty from air!",
+	interiorCompartments: [
+		"Insurance papers.",
+		"Truck owner's manual.",
+		"Paper napkins.",
+		"Various junk from years of storage."
+	],
+	windows: "Foggy!"
+}; 
+
+console.log(truckInterior);
+
+
+
+
+
+
+
+
+var arr = [true, false, "", [], function()[], 101];
+
+var truckDetailTimeMin = {
+	vacumme: 20,
+	armorAll: 30,
+	leatherConditioner: 10,
+	windowsInterior: 12,
+	interiorCompartments: {
+		gloveBox: 10,
+		centerConsole: 12,
+		doors: 8,
+		rearStorage: 5
+	},
+	windowsExterior: 15
+}; 
+
+console.log(truckDetailTimeMin);
+console.log(truckDetailTimeMin.interiorCompartments);
+
+
+
+var truckDetailTime = function () {
+	var timePerObject = (truckDetailTimeMin.vacumme) + (truckDetailTimeMin.armorAll) + (truckDetailTimeMin.leatherConditioner) + (truckDetailTimeMin.windowsInterior) + (truckDetailTimeMin.interiorCompartments.gloveBox) + (truckDetailTimeMin.interiorCompartments.centerConsole) + (truckDetailTimeMin.interiorCompartments.doors) + (truckDetailTimeMin.interiorCompartments.rearStorage) + (truckDetailTimeMin.windowsExterior);
+	return timePerObject;
+};
+
+var reportTimePerObject = function(time){
+	console.log("It will take at least " + time + " minutes to detail the rest of the truck!")
+};
+
+var time = truckDetailTime();
+
+reportTimePerObject(time);
 
 
