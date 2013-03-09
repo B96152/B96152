@@ -54,26 +54,21 @@ waveForm(3)
 
 var comfortableTemp = function(waterTemp,airTemp) {
 	var aveTemp = ((waterTemp + airTemp) / 2);
-	// Two Arguments
-	
+	// Two Arguments	
 	if (aveTemp >= 70) {
-	// True
+	// True	
 		console.log("The average temperature is " + aveTemp + "F. This is good for surfing!");
-		// 1st. 1/2 Output True
-		
+		// 1st. 1/2 Output True		
 		return true;
-		// Return Boolean True
-		
+		// Return Boolean True		
 	} else {
-	// False
+	// False	
 		console.log("The average temperature is " + aveTemp + "F. This is a little chilly to surf. May need to wear my wetsuit!");
-		// 1st. 1/2 Output False
-		
+		// 1st. 1/2 Output False		
 		return false;
 		// Return Boolean False
 		
 	};
-	
 };
 
 goodSurfTemp = comfortableTemp(70,75)
