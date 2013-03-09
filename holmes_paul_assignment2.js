@@ -1,118 +1,139 @@
 // Paul Holmes
 // SDI 1302
-// February 14, 2013
-// SDI-Project2
+// March 5, 2013
+// SDI-Project1
+// Deliverable 1
 
 
+// Start
 
+// My Variables
 
-
-// Procedure
-
-var tempFahren = "The temperature is",
-	theTemp = 72,
-	celsiusTemp = ((theTemp - 32) * (5 / 9)), 
-	dewPoint = 68,
-	dewTempFahrenheit = ((dewPoint - 32) * (5 / 9)),
-	satVapPres = ((7.5 * celsiusTemp) / (237.7 + celsiusTemp)),
-	actualVapor = ((7.5 * dewTempFahrenheit) / (237.7 + dewTempFahrenheit)),
-	satVapPresB = Math.pow(6.11,satVapPres),
-	actualVaporB = Math.pow(6.11,actualVapor);
+var surfWaves = true,
+	waterTemp = 78,
+	airTemp = 80
+	sunShine = true,
+	sunScreenOn = "I will apply my sunscreen",
+	sunScreenOff = "I will not apply my sunsceen"
+	sunBright = "\"Lots of Sunshine!\""
 	
-	relativeHum = (actualVaporB * satVapPresB);
-	
-	console.log("The relative humidity is " + relativeHum + ".");
-	
+;
 
-if (theTemp >= 68 && theTemp <= 80) {
-	console.log(tempFahren + " between 68 degrees Fahrenheit and 80 degrees Fahrenheit.");
-	console.log(tempFahren + " " + theTemp + ".");
-	console.log(tempFahren + " good for cleaning vehicles!");
+// My Procedure
 
-if (theTemp <= 68 && theTemp >= 80) {
-	console.log("The temperature is either too hot or too cold.");
-}
+if (surfWaves === true){
+// True
+	console.log("Since there are waves I want to go surfing.");
+	console.log("I will take my short board.");
+	// Output
+	
+} else {
+// False
+	console.log("Since there are not any waves I will go down to the Gulf of Mexico and wait for waves!");
+	console.log("I will take my long board.");
+	// Output
+	
+}; // Back
+
+
+
+
+
+
+
+
+
+
+var getArea = function () {
+	console.log("getArea fired!");
 };
 
-// Boolean Function/comparison
+console.log("I'm technically first.");
 
-var myTruck = "my 4Runner",
-	chooseAutoCarWash = "I choose to go to the automatic carwash",
-	driveToCarWash = false,
-	autoCarWash = "I will drive to the automatic car wash",
-	stayHome = "I will stay home"
-	washCarMyself = "I will wash",
-	paySomeone = "I will pay someone to wash"
-	truckClean = true,
-	iStayHome = true,
-	mySelf = "my self.",
-	payMoney = 10,
-	moneyHour = 2,
-	m = 30
-	washTruckSelf = "wash my truck"
+getArea();
 
 
-if (truckClean === true)
-	console.log("My truck needs to be cleaned!");
-	else
-		console.log("My truck does not need to be cleaned!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// My Outputs
+
+console.log("The surf reports that it is " + surfWaves + " that there may be waves.");
+console.log("The water temperature is " + waterTemp + ".");
+console.log("The air temperature is " + airTemp + ".");
+console.log("The surf report claims there is sun, when I look outside I can tell that this is " + sunShine + ".");
+console.log("It may be that if there is sun " + sunScreenOn + ".");
+console.log("It may be that there will be " + sunBright + ".");
+console.log("It may be that if there is no sun so " + sunScreenOff + ".");
+
+
+
+
+
+// Boolean Conditional
+
+if (surfWaves === true){
+// True
+	console.log("Since there are waves I want to go surfing.");
+	console.log("I will take my short board.");
+			
+		//	Number Conditional
+
+		if (((waterTemp + airTemp) / 2) >= 70){
+		// True
+			console.log("The average temperature is " + ((waterTemp + airTemp) / 2) + ".");
+			// Math
+			console.log("The water is warm enough to not wear a wetsuit.");
+			console.log("Time to drive down to the Gulf of Mexico!");
+			// Output A
+		} else {
+		// False
+			console.log("The water is not warm enough to wear just swim trunks.");
+			console.log("Time to drive down to the Gulf of Mexico!");
+			// Output B
+		}
+} else {
+// False
+	console.log("Since there are not any waves I will go down to the Gulf of Mexico and wait for waves!");
+	console.log("I will take my long board.");
 		
-if (driveToCarWash === true) {
-	console.log(chooseAutoCarWash + " in " + myTruck + ".");
-	console.log(autoCarWash + " in " + myTruck + ".");
-}
-	else
-		console.log(stayHome + ".");
-
-if (iStayHome === false) {
-	console.log(stayHome + " and " + paySomeone + " " + myTruck + ".");
-	console.log(paySomeone + " " + myTruck + " for $" + (payMoney * moneyHour) + " an hour.");
-}
-	else
-		console.log(stayHome + " and " + washTruckSelf + " by " + mySelf);
-
-if (m > 20) {
-	console.log("More than " + (payMoney * moneyHour) + " dollars an hour is too much money to pay someone else to wash my truck.");
-	console.log(washCarMyself + " " + myTruck + " myself.");	
-}
-	else
-		console.log("I will go ahead and pay someone to wash " + myTruck + ".");
-
-// while-loop
-
-var soapBubbles = 45;
-while /*iterator, counter*/(soapBubbles > 0) {
-	console.log("Sometimes I will think to myself, " + soapBubbles + " soap bubbles left on my truck, as I clean it.");
-	soapBubbles--;
-};
-
-console.log("Finally I'm finished washing off the soap bubbles!");
-
-// String function #4
-
-// For String Concatenation
-
-var str1 = "Now ";
-var str2 = "to ";
-var str3 = "start the waxing process!";
-var n = str1.concat(str2,str3); 
-
-console.log(n)
-
-// Array function #5
-
-// For loop function
-
-var threeStepWax = [ "Cleaner", "Polisher", "Wax" ],
-	minutesPerWaxStep = [90, 60, 45];
-for (var waxStepNumber = 0; waxStepNumber < threeStepWax.length; waxStepNumber++) {
-	var waxName = threeStepWax[waxStepNumber];
-		minutesThisWaxStep = minutesPerWaxStep[waxStepNumber];
-	console.log("I start to wax my truck using the step requiring the " + waxName + " for " + minutesThisWaxStep + " minutes");
-	for (var minutes = 0; minutes < minutesThisWaxStep; minutes += 15) {
-		var minutesRemain = minutesThisWaxStep - minutes;
-		console.log(minutes + " minutes have passed thus far, about " + minutesRemain + " minutes till I'm done!");
-	}
-	console.log("I'm pretty much done with the " + waxName + "!");
+		// String Conditional
+		
+		if (sunShine === true){
+		// True
+			console.log("It looks like there is " + sunBright + ", so " + sunScreenOn + ".");
+			// String Concatenation
+			console.log("Time to drive down to the Gulf of Mexico!");
+			// Output C
+		} else {
+		// False
+			console.log("It looks like the sun is not out today so " + sunScreenOff + ".");
+			console.log("Time to drive down to the Gulf of Mexico!");
+			// Output D
+	};
 	
-}	// for waxStepNumber
+}; // Finish
+
+*/
