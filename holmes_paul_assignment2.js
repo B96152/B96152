@@ -15,8 +15,7 @@ var surfWaves = true,
 	sunShine = true,
 	sunScreenOn = "I will apply my sunscreen",
 	sunScreenOff = "I will not apply my sunsceen",
-	sunBright = "\"Lots of Sunshine!\"",
-	var temp = comfortableTemp(70,80);
+	sunBright = "\"Lots of Sunshine!\""
 	
 ;
 
@@ -46,15 +45,21 @@ waveForm(3)
 // Back
 
 
+
+
+
+
+
 // My Boolean Function
 
 var comfortableTemp = function(waterTemp,airTemp) {
 	var aveTemp = ((waterTemp + airTemp) / 2);
+	// Two Arguments
 	
 	if (aveTemp >= 70) {
 	// True
 		console.log("The average temperature is " + aveTemp + "F. This is good for surfing!");
-		// Output
+		// 1st. 1/2 Output True
 		
 		return true;
 		// Return Boolean True
@@ -62,14 +67,28 @@ var comfortableTemp = function(waterTemp,airTemp) {
 	} else {
 	// False
 		console.log("The average temperature is " + aveTemp + "F. This is a little chilly to surf. May need to wear my wetsuit!");
-		// Output
+		// 1st. 1/2 Output False
 		
-		return false
+		return false;
 		// Return Boolean False
+		
 	};
 	
 };
 
+goodSurfTemp = comfortableTemp(70,75)
+// Boolean value (true or false) to be returned to the main code.
+
+console.log("The surf report that claims the surf temperature is good, is " + goodSurfTemp + "!");
+// 2nd 1/2 Output (True or False) follows the first true or false Outputs.
+
+
+
+
+
+
+
+// My Number Function
 
 
 
