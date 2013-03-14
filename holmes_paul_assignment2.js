@@ -1,6 +1,6 @@
 // Paul Holmes
 // SDI 1302
-// March 5, 2013
+// March 14, 2013
 // SDI-Project1
 // Deliverable 1
 
@@ -9,15 +9,12 @@
 
 // My Variables
 
-var surfWaves = true,
+var shortBoard = "I will take my short board"
+	longBoard = "I will take my long board"
 	waterTemp = 78,
 	airTemp = 80,
-	sunShine = true,
-	sunScreenOn = "I will apply my sunscreen",
-	sunScreenOff = "I will not apply my sunsceen",
-	sunBright = "\"Lots of Sunshine!\"",
-	numWaves = 0
-	var waveLocations = [
+	numWaves = 0,	
+	waveLocations = [
 	"61st Street Jetty",
 	"Flagship Hotel Jetty",
 	"Surf Side",
@@ -42,13 +39,13 @@ var waveForm = function(waveHeight) {
 	// True
 		console.log("The waves are " + waveHeight + "' high!");
 		console.log("Since there are waves I want to go surfing.");
-		console.log("I will take my short board.");
+		console.log(shortBoard + ".");
 		// Output
 		
 	} else {
 	// False
 		console.log("Since there are not any waves I will go down to the Gulf of Mexico and wait for waves!");
-		console.log("I will take my long board.");
+		console.log(longBoard + ".");
 		// Output
 		
 	};
