@@ -16,8 +16,8 @@ var surfWaves = true,
 	sunScreenOn = "I will apply my sunscreen",
 	sunScreenOff = "I will not apply my sunsceen",
 	sunBright = "\"Lots of Sunshine!\"",
-	numWaves = 0,
-	waveLocation = [
+	numWaves = 0
+	var waveLocations = [
 	"61st Street Jetty",
 	"Flagship Hotel Jetty",
 	"Surf Side",
@@ -26,8 +26,8 @@ var surfWaves = true,
 	waveTime = [
 	5,
 	10,
-	12,
-	15
+	15,
+	20
 ]
 ;
 
@@ -150,31 +150,28 @@ console.log("I used Beez Wax for my base coat, and then I used my Sex Wax for my
 
 // My Array Function
 
-var waveTimeSpot = function(waves, time){
-	for (var waveNum = 0; waveNum <= waves.length; waveNum++){
-		var surfed = waves;
-		var location = waves[waveNum],
-			timeTheseWaves = time[waveNum];
-			console.log("Will surf " + location + " for " + timeTheseWaves + " minutes.");
-			for (var times = 0; times <= timeTheseWaves.length; times++){
-				var timesLeft = timeTheseWaves - timesLeft
-				console.log("I am done surfing " + location + ".");
-			}
-				console.log("Time to go surf somewhere else!");
-				return surfed;
-}				
+
+var surfWave = function(){
+	var waveLocName = waveLocations[waveLocNum],
+	minutesThisLocation = waveTime[waveLocNum];
+	// Local Variables
+		console.log("Will surf " + waveLocName + " for " + minutesThisLocation + " minutes.");
+	
+	for (var minutes = 0; minutes <= minutesThisLocation; minutes +=5){
+	// For Loop
+		var minutesRemian = minutesThisLocation - minutes;
+		//  Math
+		console.log(minutes + " done, " + minutesRemian + " to go!");
+		// 1st 1/2 Output
+		};
+		console.log("I'm done surfing " + waveLocName + ".");
+		// 2nd 1/2 Ouput
 };
 
-var funSurf = waveTimeSpot(waveLocation, waveTime);
-console.log(funSurf);
+for (var waveLocNum = 0; waveLocNum < waveLocations.length; waveLocNum++)
 
-
-
-
-
-
-
-
+surfWave()
+// Finish
 
 
 
